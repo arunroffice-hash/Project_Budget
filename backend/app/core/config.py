@@ -9,7 +9,7 @@ class Settings(BaseSettings):
     access_token_expire_minutes: int = 60 * 24
     algorithm: str = "HS256"
     database_url: str = "sqlite:///./budget.db"
-    allowed_origins: str = "http://localhost:5173"
+    allowed_origins = "http://localhost:5173,https://projectbudget-production-4784.up.railway.app"
     rate_limit_default: str = "100/minute"
     gold_price_api_url: str | None = None
     gold_price_api_key: str | None = None
